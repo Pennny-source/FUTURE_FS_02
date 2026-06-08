@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/Coolvetica-Rg-It.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --bg-main:#050B14;
+  --bg-sidebar:#07101C;
+  --bg-card:#101826;
+
+  --accent:#36D7FF;
+
+  --text:#F8FAFC;
+  --muted:#94A3B8;
+}
+
+body{
+   margin:0;
+  font-family:'Coolvetica',sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(54,215,255,.08),
+      transparent 45%
+    ),
+    #050B14;
+
+  color:white;
+}
+* {
+  font-family: 'Coolvetica', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Coolvetica', sans-serif;
+  letter-spacing: 0.02em;
+}
+button,
+input,
+textarea,
+select {
+  font-family: 'Coolvetica', sans-serif;
+}
+
+.crm-card{
+  background:#101826;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:32px;
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.btn-primary{
+  background:#36D7FF;
+
+  color:#041019;
+
+  border-radius:18px;
+
+  font-weight:700;
+
+  box-shadow:
+    0 0 30px rgba(54,215,255,.25);
+
+  transition:.25s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+::-webkit-scrollbar{
+  width:6px;
+}
+
+::-webkit-scrollbar-track{
+  background:#050B14;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#1e293b;
+}
